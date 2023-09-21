@@ -1,0 +1,2 @@
+# solidjs-facebook-auth
+ 

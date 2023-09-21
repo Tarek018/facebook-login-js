@@ -35,7 +35,7 @@ export class FBAuth {
        try {
         await FB.FB.login((response:any) => {
           if (response.authResponse) {            
-            this.accesToken = response.authResponse.accessToken;
+            this.accesToken = response.authResponse.accessToken;            
           } else {
             console.log("User cancelled login or did not fully authorize.");
           }
@@ -46,14 +46,12 @@ export class FBAuth {
     }
 
     getUsername = async () => {
-      const userAccessToken = "EAALphZCD7y8wBO3FDr1IZCCTFHQh7ZCbKb44mNnihnLthHq5DADvYmoZA7XvM1koH0DZBIgYH4EVfz3y32ccEa5PMFt8TfUMSQmCp8zWmS24IK4kJ2rT18Aat9oVST1YYiZB67fdFnVfKl0kX25n9ZCGygmqV7zINo0vsGTEQgUVRE5dusCcFipt1aTA9mptCGxFckZD";
       const response = await fetch(`https://graph.facebook.com/me?fields=id,name&access_token=${this.accesToken}`);
       const data = await response.json();
       const userName = await data.name;
       return userName;
     }
     getPitureUrl = async () => {
-        const userAccessToken = "EAALphZCD7y8wBO3FDr1IZCCTFHQh7ZCbKb44mNnihnLthHq5DADvYmoZA7XvM1koH0DZBIgYH4EVfz3y32ccEa5PMFt8TfUMSQmCp8zWmS24IK4kJ2rT18Aat9oVST1YYiZB67fdFnVfKl0kX25n9ZCGygmqV7zINo0vsGTEQgUVRE5dusCcFipt1aTA9mptCGxFckZD";
         const response = await fetch(`https://graph.facebook.com/me?fields=id,name,picture&access_token=${this.accesToken}`);
         const data = await response.json();
         const userName = await data.name;

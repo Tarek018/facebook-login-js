@@ -5,12 +5,8 @@
 - `npm i solidjs-facebook-auth` or `pnpm i solidjs-facebook-auth`
 
 
-## Development
-
-```shell
-git clone https://github.com/keppelen/react-facebook-login.git 
-
 ## How to use
+
 
 ```js
 import { FBAuth } from "solidjs-facebook-auth/FacebookAuth"

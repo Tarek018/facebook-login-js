@@ -1,6 +1,6 @@
 {
   "name": "solidjs-facebook-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Tarek018/solidjs-facebook-auth.git"
   },
-  "keywords": [],
+  "keywords": [
+    "SolidJS"
+  ],
   "author": "Tarek Triki <tarek22042002triki@gmail.com>",
   "license": "MIT",
   "bugs": {

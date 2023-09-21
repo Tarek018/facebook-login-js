@@ -6,7 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarek018/solidjs-facebook-auth.git"
+  },
   "keywords": [],
   "author": "Tarek Triki <tarek22042002triki@gmail.com>",
-  "license": "MIT" 
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tarek018/solidjs-facebook-auth.git/issues"
+  },
+  "homepage": "https://github.com/Tarek018/solidjs-facebook-auth.git#readme"
 }

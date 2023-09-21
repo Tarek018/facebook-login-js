@@ -1,5 +1,5 @@
 # solidjs-facebook-auth
- A Component SolidJS for Facebook Login
+ A package for Facebook Login in SolidJS 
 
  ## Getting Started
 - `npm i solidjs-facebook-auth` or `pnpm i solidjs-facebook-auth`

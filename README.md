@@ -2,7 +2,7 @@
 A package for Facebook Login
 
  ## Getting Started
-- `npm i solidjs-facebook-auth` or `pnpm i solidjs-facebook-auth`
+- `npm i facebook-login-js` or `pnpm i facebook-login-js`
 
 
 ## Usage

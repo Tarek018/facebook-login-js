@@ -1,6 +1,6 @@
 {
   "name": "facebook-login-js",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,11 @@
     "url": "git+https://github.com/Tarek018/solidjs-facebook-auth.git"
   },
   "keywords": [
-    "SolidJS"
+    "Javascript",
+    "SolidJS",
+    "react",
+    "facebook-login",
+    "solid-js-login-facebook"
   ],
   "author": "Tarek Triki <tarek22042002triki@gmail.com>",
   "license": "MIT",

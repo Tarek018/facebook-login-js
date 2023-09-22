@@ -1,5 +1,5 @@
-# solidjs-facebook-auth
- A package for Facebook Login in SolidJS 
+# facebook-login
+A package for Facebook Login
 
  ## Getting Started
 - `npm i solidjs-facebook-auth` or `pnpm i solidjs-facebook-auth`
@@ -8,7 +8,7 @@
 ## How to use
 
 
-```js
+``` 
 import { FBAuth } from "solidjs-facebook-auth/FacebookAuth"
 
 let fb:FBAuth = new FBAuth(appId) 
@@ -17,7 +17,7 @@ let fb:FBAuth = new FBAuth(appId)
 fb.login();
 
 //for get username 
-let username = fb.getUsername()
+let username = await fb.getUsername()
 
 //for get picture url 
 let Url = await fb.getPitureUrl()

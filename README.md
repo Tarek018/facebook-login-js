@@ -5,7 +5,7 @@ A package for Facebook Login
 - `npm i solidjs-facebook-auth` or `pnpm i solidjs-facebook-auth`
 
 
-## How to use
+## Usage
 
 
 ``` 

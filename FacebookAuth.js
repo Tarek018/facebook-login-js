@@ -1,12 +1,12 @@
 export class FBAuth {
-  appId: Number;
-  accesToken:any;
+  appId ;
+  accesToken;
 
-  constructor(appId:Number) {
+  constructor(appId) {
       this.appId = appId;
-      const scriptTag = document.createElement("script");
+      var scriptElement = document.createElement("script");
     // Set the JavaScript code as the content of the script
-    scriptTag.textContent  = `
+    scriptElement.textContent = `
     window.fbAsyncInit = function() {
       FB.init({
         appId: '${this.appId}',
@@ -27,13 +27,13 @@ export class FBAuth {
     `;
 
     // Append the script element to the document's <head> or <body>
-    document.head.appendChild(scriptTag);
+    document.head.appendChild(scriptElement);
   }
 
   login = async () => {
-     let FB:any = window;
+     let FB = window;
      try {
-      await FB.FB.login((response:any) => {
+      await FB.FB.login((response) => {
         if (response.authResponse) {            
           this.accesToken = response.authResponse.accessToken;            
         } else {
@@ -58,8 +58,8 @@ export class FBAuth {
       return userName;
   }
   logout = async () => {
-      let FB:any = window;
-      FB.FB.logout((response:any) => {
+      let FB = window;
+      FB.FB.logout((response) => {
           console.log("user is now logged out");
           
         });

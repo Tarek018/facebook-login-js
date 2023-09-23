@@ -6,7 +6,7 @@ export class FBAuth {
       this.appId = appId;
       const scriptTag = document.createElement("script");
     // Set the JavaScript code as the content of the script
-    scriptTag.innerText  = `
+    scriptTag.textContent  = `
     window.fbAsyncInit = function() {
       FB.init({
         appId: '${this.appId}',

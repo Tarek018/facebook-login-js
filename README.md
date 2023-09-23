@@ -9,7 +9,7 @@ A package for Facebook Login
 
 
 ``` 
-import { FBAuth } from "solidjs-facebook-auth/FacebookAuth"
+import { FBAuth } from "facebook-login-js/FacebookAuth"
 
 let fb:FBAuth = new FBAuth(appId) 
 

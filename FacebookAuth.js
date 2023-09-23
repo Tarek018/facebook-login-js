@@ -4,9 +4,9 @@ export class FBAuth {
 
     constructor(appId) {
         this.appId = appId;
-        var scriptElement = document.createElement("script");
+        const scriptTag = document.createElement("script");
       // Set the JavaScript code as the content of the script
-      scriptElement.textContent = `
+      scriptElement.innerText  = `
       window.fbAsyncInit = function() {
         FB.init({
           appId: '${this.appId}',
@@ -27,7 +27,7 @@ export class FBAuth {
       `;
 
       // Append the script element to the document's <head> or <body>
-      document.head.appendChild(scriptElement);
+      document.body.append(scriptTag);
     }
 
     login = async () => {

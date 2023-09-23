@@ -12,7 +12,7 @@ export class FBAuth {
         appId: '${this.appId}',
         autoLogAppEvents: true,
         xfbml: true,
-        version: 'v12.0' // Use the desired version of the API
+        version: 'v12.0' 
       });
     };
   

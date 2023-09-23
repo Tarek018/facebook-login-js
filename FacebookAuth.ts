@@ -1,8 +1,8 @@
 export class FBAuth {
-  appId:number ;
-  accesToken;
+  appId:Number ;
+  accesToken:String;
 
-  constructor(appId:number) {
+  constructor(appId:Number) {
       this.appId = appId;
       var scriptElement = document.createElement("script");
     // Set the JavaScript code as the content of the script
@@ -59,7 +59,7 @@ export class FBAuth {
   }
   logout = async () => {
       let FB:any = window;
-      FB.FB.logout((response:Response) => {
+      FB.FB.logout((response:any) => {
           console.log("user is now logged out");
           
         });
